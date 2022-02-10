@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pdf Viewer</string>
+    <string name="pdf_name">Pdf name</string>
+    <string name="linear">Linear Pdf View</string>
+    <string name="grid_pdf_view">Grid Pdf View</string>
+    <string name="enter_the_text">Enter the text</string>
+    <string name="create_pdf_file">Create Pdf File</string>
+</resources>

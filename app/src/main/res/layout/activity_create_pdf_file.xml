@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatePdfFileActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_round_arrow_back_24" />
+
+        <EditText
+            android:id="@+id/pdfTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backButton"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@null"
+            android:hint="Title"
+            android:padding="10dp"
+            android:paddingHorizontal="10dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pdfDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/pdfTitle"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:background="@null"
+            android:gravity="top|start"
+            android:hint="@string/enter_the_text"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/savePdfButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/button_shpe"
+            android:text="@string/create_pdf_file"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

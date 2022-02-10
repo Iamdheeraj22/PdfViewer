@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PdfViewActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/cardView"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/pdf_name"
+            android:id="@+id/pdfViewNameTextView"
+            android:textColor="@color/black"
+            android:ellipsize="marquee"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="6dp"
+            android:height="50dp"
+            android:layout_marginEnd="5dp"
+            android:singleLine="true"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/sharePdfButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/white_background"
+        android:contentDescription="TODO"
+        android:padding="8dp"
+        android:src="@drawable/ic_share"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
